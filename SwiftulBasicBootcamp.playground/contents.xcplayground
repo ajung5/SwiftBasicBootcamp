@@ -3,5 +3,8 @@
     <pages>
         <page name='SwiftBasics'/>
         <page name='BasicTypes'/>
+        <page name='Variables'/>
+        <page name='IfStatement'/>
+        <page name='Operator'/>
     </pages>
 </playground>
