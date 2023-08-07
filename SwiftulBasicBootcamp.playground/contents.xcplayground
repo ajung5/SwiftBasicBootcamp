@@ -6,5 +6,6 @@
         <page name='Variables'/>
         <page name='IfStatement'/>
         <page name='Operator'/>
+        <page name='Functions'/>
     </pages>
 </playground>
