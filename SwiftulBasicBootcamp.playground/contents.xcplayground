@@ -8,6 +8,9 @@
         <page name='Operator'/>
         <page name='Functions'/>
         <page name='Optionals-Complex-If-Let'/>
+        <page name='Optionals-Nested-If-Let'/>
         <page name='Optionals'/>
+        <page name='Functions-Example'/>
+        <page name='Optionals-Nested-Guard'/>
     </pages>
 </playground>
