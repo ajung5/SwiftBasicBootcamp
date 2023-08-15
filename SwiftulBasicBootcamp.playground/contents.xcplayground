@@ -12,5 +12,8 @@
         <page name='Optionals'/>
         <page name='Functions-Example'/>
         <page name='Optionals-Nested-Guard'/>
+        <page name='OptionalChaining'/>
+        <page name='Tuples'/>
+        <page name='ObjectOrientedProgramming'/>
     </pages>
 </playground>
