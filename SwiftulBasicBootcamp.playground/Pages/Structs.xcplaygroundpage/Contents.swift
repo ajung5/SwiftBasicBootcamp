@@ -65,7 +65,7 @@ struct Car {
     
     init(carManufacture: String, year: Date?, carType: String, engine: String?) {
         self.carManufacture = carManufacture
-        self.year = year ?? .now // property "year" bertipe data bukan optionals, tetapi di parameter func init bertype optional. jadi harus di unwrap dulu.
+        self.year = year ?? .now // property "year" bertipe data bukan optionals, tetapi di parameter func init bertype optional. jadi harus di unwrap dulu menggunakan coalescing (??)
         self.carType = carType
         self.engine = engine
     }
@@ -73,3 +73,26 @@ struct Car {
 
 let myCar: Car = Car(carManufacture: "Toyota", year: nil, carType: "SUV", engine: "Diesel")
 print(myCar)
+
+// ######### ---------- Upadting struct ---------- ##########
+
+// ######### ---------- Immutable struct ---------- ##########
+// "Immutable struct" = all "let" constants = not mutable = "cannot mutate it"
+// membuat object "UserModel"
+struct UserModel {
+    let name: String
+    let isPremium: Bool
+}
+
+// membuat varibel "user1"
+var user1: UserModel = UserModel(name: "Ajung", isPremium: false)
+
+func markUserAsPremium () {
+    print(user1)
+    
+    // update property  "isPremium" pada object "UserModel" dengan cara mengambil nilai "user1" sebelumnya
+    user1 = UserModel(name: user1.name, isPremium: true)
+    print(user1)
+}
+
+markUserAsPremium()
