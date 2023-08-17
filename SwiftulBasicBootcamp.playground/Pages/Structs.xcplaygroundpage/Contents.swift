@@ -78,6 +78,7 @@ print(myCar)
 
 // ######### ---------- Immutable struct ---------- ##########
 // "Immutable struct" = all "let" constants = not mutable = "cannot mutate it"
+// "Immutable" = tidak bisa diubah
 // membuat object "UserModel"
 struct UserModel {
     let name: String
@@ -96,3 +97,43 @@ func markUserAsPremium () {
 }
 
 markUserAsPremium()
+
+// ######### ---------- Mutable struct ---------- ##########
+// "mutable" = dapat diubah
+struct UserModel2 {
+    let name: String
+    var isPremium: Bool
+}
+
+
+// user2 adalah variabel tersendiri, jadi bisa langsung akses properti isPremium pada oobject Use"rModel2"
+var user2 = UserModel2(name: "John Doe", isPremium: false)
+
+func markUserAsPremium2() {
+    print(user2)
+    
+    // update property "isPremium" langsung melalui variabel "user2"
+    user2.isPremium = true
+    print(user2)
+}
+
+markUserAsPremium2()
+
+// ######### ---------- Update Imutable struct ---------- ##########
+
+/// Imutable struct
+struct UserModel3 {
+    let name: String
+    let isPremium: Bool
+    
+    // func markUserAsPremium untuk mengubah property imutable, disimpan di dalam struct itu sendiri
+    func markUserAsPRemium (newValue: Bool) -> UserModel3{
+        return UserModel3(name: name, isPremium: newValue)
+    }
+}
+
+var user3: UserModel3 = UserModel3(name: "Jane Doe", isPremium: false)
+
+user3 = user3.markUserAsPRemium(newValue: true)
+print(user3)
+
