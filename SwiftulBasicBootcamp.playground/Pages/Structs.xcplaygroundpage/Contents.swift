@@ -121,7 +121,7 @@ markUserAsPremium2()
 
 // ######### ---------- Update Imutable struct ---------- ##########
 
-/// Imutable struct
+// Imutable struct
 struct UserModel3 {
     let name: String
     let isPremium: Bool
@@ -136,4 +136,26 @@ var user3: UserModel3 = UserModel3(name: "Jane Doe", isPremium: false)
 
 user3 = user3.markUserAsPRemium(newValue: true)
 print(user3)
+
+// ######### ---------- Update Mutable struct ---------- ##########
+
+// Mutable struct
+
+struct UserModel4 {
+    let name: String
+    private (set) var isPremium: Bool
+    
+    mutating func markUserAsPremium() {
+        isPremium = true
+    }
+    
+    mutating func updateIsPremium(newValue: Bool) {
+        isPremium = newValue
+    }
+}
+
+var user4 = UserModel4(name: "Ujang", isPremium: false)
+
+user4.markUserAsPremium()
+user4.updateIsPremium(newValue: true)
 
