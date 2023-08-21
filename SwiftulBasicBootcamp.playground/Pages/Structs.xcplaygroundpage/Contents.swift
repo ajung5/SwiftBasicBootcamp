@@ -141,9 +141,9 @@ print(user3)
 
 // Mutable struct
 
-struct UserModel4 {
+struct UserModel4 {
     let name: String
-    private (set) var isPremium: Bool
+    private ( set ) var isPremium: Bool
     
     mutating func markUserAsPremium() {
         isPremium = true
@@ -157,5 +157,5 @@ struct UserModel4 {
 var user4 = UserModel4(name: "Ujang", isPremium: false)
 
 user4.markUserAsPremium()
-user4.updateIsPremium(newValue: true)
+user4.updateIsPremium(newValue: true )
 
