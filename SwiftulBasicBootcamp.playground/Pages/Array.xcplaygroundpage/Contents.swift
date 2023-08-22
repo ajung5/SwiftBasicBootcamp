@@ -119,3 +119,15 @@ for (index, items) in myProducts.enumerated() {
     print("Index ke - \(index) adalah Nama Barang: \(items.title), Harga: \(items.price)")
 }
 
+// ######### ---------- Array vs Set ---------- ##########
+
+// # Array
+// didalam sebuah array, bisa terdapat value yang duplikat
+var addressArr: [String] = ["Bogor", "Subang", "Bekasi", "Subang"] // output: ["Bogor", "Subang", "Bekasi", "Subang"]
+print(addressArr)
+
+// # Set
+// didalam sebuah Set, tidak bisa terdapat value yang duplikat. alias set memiliki Unique Value
+// Set are not ordered.
+var addressSet: Set<String> = ["Bogor", "Subang", "Bekasi", "Subang"] // output: ["Bogor", "Subang", "Bekasi"]
+print(addressSet)
