@@ -74,4 +74,20 @@ animalsArray.insert(contentsOf: ["Bird","Koala" ], at: 3)
 print(animalsArray)
 
 
+// ######### ---------- Remove Array ---------- ##########
 
+// ["Elephant", "Lion", "Fish", "Bird", "Koala", "Chicken", "Pigeon", "Duck", "Cow"]
+// menghapus item atau index ketiga dari "animalArray"
+animalsArray.remove(at: 2)
+
+
+//
+
+var cityArray: [String] = ["Jakarta", "Bandung", "Semarang", "Surabaya"]
+print(cityArray)
+
+//for city in cityArray {
+//    if cityArray.count < 3 {
+//        print(cityArray)
+//    }
+//}
