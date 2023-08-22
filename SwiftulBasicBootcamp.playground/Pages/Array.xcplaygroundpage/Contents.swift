@@ -73,6 +73,10 @@ print(animalsArray)
 animalsArray.insert(contentsOf: ["Bird","Koala" ], at: 3)
 print(animalsArray)
 
+for (index, items) in animalsArray.enumerated() {
+    print("Index ke- \(index) adalah \(items)")
+}
+
 
 // ######### ---------- Remove Array ---------- ##########
 
