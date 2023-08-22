@@ -21,4 +21,18 @@ let cars2: Array<String> = [toyota, honda, mercedes]
 print(cars2)
 
 
+// ######### ---------- Count Array ---------- ##########
+
+// menghitung jumlah array
+let count = fruits.count
+
+
+// ######### ---------- First and Last Array ---------- ##########
+// mengambil item pertama pada array "fruits"
+let  firstItem = fruits.first
+
+// mengambil item terakhir pada array "fruits"
+let lastItem  = fruits.last
+
+
 
