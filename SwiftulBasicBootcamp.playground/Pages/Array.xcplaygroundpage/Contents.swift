@@ -35,4 +35,26 @@ let  firstItem = fruits.first
 let lastItem  = fruits.last
 
 
+// ######### ---------- Add Item to Array ---------- ##########
+// jika ingin menambah/hapus array, harus var. jangan let
+var animalsArray: [String] = ["Elephant", "Lion"]
+
+// menambahkan item ke dalam array
+
+// cara ini ga biasa digunakan untuk menambahkan item ke array
+// ada cara lain yaitu dengan menggunakan "Append"
+// # 1
+// animalsArray = animalsArray + ["Horse"]
+//animalsArray.count
+
+// # 2 (append)
+// menambahkan item ke dalam array menggunakan append hanya single/ satu-satu
+animalsArray.append("Chicken")
+animalsArray.append("Pigeon")
+
+// menambahkan item ke dalam array menggunakan append(contentsOf:[]) / menambahakan beberapa item ke dalam existing array
+animalsArray.append(contentsOf: ["Duck", "Cow"])
+print(animalsArray)
+
+
 
