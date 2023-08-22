@@ -57,4 +57,21 @@ animalsArray.append(contentsOf: ["Duck", "Cow"])
 print(animalsArray)
 
 
+// ######### ---------- Acces Item in Array ---------- ##########
+
+// mengakses array
+print("Isi dari Arrray ke-3 adalah \(animalsArray[2])")
+
+
+// ######### ---------- Insert Item in between to Array ---------- ##########
+
+// menyisipkan satu item array diantara items
+animalsArray.insert("Fish", at: 2)
+print(animalsArray)
+
+// menyisipkan beberapa item pada index ke 3
+animalsArray.insert(contentsOf: ["Bird","Koala" ], at: 3)
+print(animalsArray)
+
+
 
