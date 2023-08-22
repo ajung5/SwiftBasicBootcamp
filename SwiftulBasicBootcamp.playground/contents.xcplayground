@@ -20,5 +20,6 @@
         <page name='Classes'/>
         <page name='AccessControl'/>
         <page name='Array'/>
+        <page name='training'/>
     </pages>
 </playground>
