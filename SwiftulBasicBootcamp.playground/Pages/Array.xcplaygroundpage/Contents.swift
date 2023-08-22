@@ -95,3 +95,27 @@ print(cityArray)
 //        print(cityArray)
 //    }
 //}
+
+// ######### ---------- Array with custom types ---------- ##########
+
+struct ProductModel {
+    let title: String
+    let price: Int
+}
+
+// dalam sebuah array, bisa terdapat lebih dari satu type data
+// sebelum membuat array. buat dulu struct untuk menampung custom type data tsb
+var myProducts: [ProductModel] = [
+    ProductModel(title: "Product 1", price: 25),
+    ProductModel(title: "Product 2", price: 10),
+    ProductModel(title: "Product 3", price: 25),
+    ProductModel(title: "Product 4", price: 30)
+]
+
+print(myProducts[1])
+
+// melakukan perulangan untuk menampilkan value dari Array "myProducts"
+for (index, items) in myProducts.enumerated() {
+    print("Index ke - \(index) adalah Nama Barang: \(items.title), Harga: \(items.price)")
+}
+
