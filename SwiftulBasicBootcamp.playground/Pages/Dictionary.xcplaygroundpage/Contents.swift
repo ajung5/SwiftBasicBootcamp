@@ -38,3 +38,17 @@ var testScores: [String : Int] = [
 ]
 
 let score = testScores["KD01"]
+
+
+// ######### ---------- Add and Remove item ---------- ##########
+
+// # Add Item in Dictionary
+// tinggal panggil saja nama dictionary nya, terus isi [key] = [value] nya
+testScores ["CX60"] = 75
+testScores ["E63"] = 88
+print(testScores)
+
+// # Remove item in Dictionary
+// menghapus value dari key
+testScores.removeValue(forKey: "E63")
+print(testScores)
