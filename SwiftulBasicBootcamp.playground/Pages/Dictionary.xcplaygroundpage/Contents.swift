@@ -52,3 +52,15 @@ print(testScores)
 // menghapus value dari key
 testScores.removeValue(forKey: "E63")
 print(testScores)
+
+
+// ######### ---------- Array vs Dictionary ---------- ##########
+/*
+ #Array
+ - untuk membuat data berdasarkan index
+ 
+ # Dictionary
+ - Jika membutuhkan data yang memiliki unik id
+ - dictionary lebih cepat load data daripada Array
+ 
+*/
