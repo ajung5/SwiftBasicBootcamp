@@ -1,2 +1,25 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<playground version='6.0' target-platform='ios' buildActiveScheme='true' importAppTypes='true'/>
+<playground version='6.0' target-platform='ios' buildActiveScheme='true' importAppTypes='true'>
+    <pages>
+        <page name='AccessControl'/>
+        <page name='Array'/>
+        <page name='BasicTypes'/>
+        <page name='Classes'/>
+        <page name='Enums'/>
+        <page name='Functions-Example'/>
+        <page name='Functions'/>
+        <page name='IfStatement'/>
+        <page name='ObjectOrientedProgramming'/>
+        <page name='Operator'/>
+        <page name='OptionalChaining'/>
+        <page name='Optionals-Complex-If-Let'/>
+        <page name='Optionals-Nested-Guard'/>
+        <page name='Optionals-Nested-If-Let'/>
+        <page name='Optionals'/>
+        <page name='Structs'/>
+        <page name='SwiftBasics'/>
+        <page name='Tuples'/>
+        <page name='Dictionary'/>
+        <page name='Variables'/>
+    </pages>
+</playground>
