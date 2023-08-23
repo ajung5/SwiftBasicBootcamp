@@ -64,3 +64,34 @@ print(testScores)
  - dictionary lebih cepat load data daripada Array
  
 */
+
+// ######### ---------- Dictionary with custome type ---------- ##########
+
+struct PostModel {
+    let id: String
+    let titel: String
+    let likeCount: Int
+}
+
+var postArray: [PostModel] = [
+    PostModel(id: "STR332", titel: "Post 1", likeCount: 3), // index 0
+    PostModel(id: "CX90", titel: "Post 2", likeCount: 31), // index 1
+    PostModel(id: "GT63", titel: "Post 3", likeCount: 13), // index 2
+    PostModel(id: "GTR35", titel: "Post 4", likeCount: 53) // index 3
+]
+
+// mengecek apakah ada data
+if postArray.indices.contains(2) {
+    let item = postArray[2]
+    print(item)
+}
+
+var postDict: [String : PostModel] = [
+    "STR332" : PostModel(id: "STR332", titel: "Post 1", likeCount: 3),
+    "CX90"   : PostModel(id: "CX90", titel: "Post 2", likeCount: 31),
+    "GT63"   : PostModel(id: "GT63", titel: "Post 3", likeCount: 13),
+    "GTR35"  : PostModel(id: "GTR35", titel: "Post 4", likeCount: 53)
+]
+
+let newItem = postDict["GTR35"]
+print(newItem ?? "Data tidak ditemukan") // jika tidak ada key pada newItem, maka default value nya adalah nil (bebas sih mau apa aja default valuenya)
