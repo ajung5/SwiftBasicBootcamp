@@ -22,5 +22,6 @@
         <page name='Dictionary'/>
         <page name='Variables'/>
         <page name='ForLoops'/>
+        <page name='FilterSortMap'/>
     </pages>
 </playground>
