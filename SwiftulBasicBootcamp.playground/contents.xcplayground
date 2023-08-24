@@ -21,5 +21,6 @@
         <page name='Tuples'/>
         <page name='Dictionary'/>
         <page name='Variables'/>
+        <page name='ForLoops'/>
     </pages>
 </playground>
