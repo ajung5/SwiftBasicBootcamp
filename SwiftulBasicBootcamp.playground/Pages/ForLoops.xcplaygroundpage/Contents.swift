@@ -46,4 +46,38 @@ for (index, lesson) in allLesson.enumerated() {
     print("Index ke - \(index) adalah \(lesson.titel), isFavorite \(lesson.isFavorite)")
 }
 
+// ######### ---------- Control Flow (break & Continue) ---------- ##########
 
+let monthArray: [String] = [
+    "January",
+    "February",
+    "March",
+    "April",
+    "May",
+    "June",
+    "July",
+    "August",
+    "September",
+    "October",
+    "November",
+    "December"
+]
+
+// # break
+// jika kondisi sudah terpenuhi, maka looping akan di hentikan
+
+for (index, month) in monthArray.enumerated() {
+    if index == 2 {
+        break
+    }
+    print(index, month)
+}
+
+// # continue
+// jika kondisi sudah terpenuhi, maka akan melewati
+for (x, y) in monthArray.enumerated() {
+    if x == 2 {
+        continue
+    }
+    print(x, y)
+}
