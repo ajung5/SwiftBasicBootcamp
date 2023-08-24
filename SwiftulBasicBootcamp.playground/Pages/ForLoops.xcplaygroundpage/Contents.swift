@@ -33,7 +33,17 @@ var favoriteLesson: [LessonModel] = []
 for lesson in allLesson {
     if lesson.isFavorite {
         favoriteLesson.append(lesson)
+//        for item in favoriteLesson {
+//            print(item)
+//        }
     }
 }
+print(favoriteLesson)
 
-print("\(favoriteLesson)")
+// ######### ---------- Enumerated array ---------- ##########
+
+for (index, lesson) in allLesson.enumerated() {
+    print("Index ke - \(index) adalah \(lesson.titel), isFavorite \(lesson.isFavorite)")
+}
+
+
