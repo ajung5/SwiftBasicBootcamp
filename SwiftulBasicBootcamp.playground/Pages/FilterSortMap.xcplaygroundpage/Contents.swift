@@ -54,7 +54,7 @@ for (_, item) in allUserIsPremium.enumerated() {
 }
 
 
-print("")
+print("------------------------------")
 
 // # cara otomatis 3
 // user ddigantikan dengan $0
@@ -64,3 +64,59 @@ var allUserIsPremium2: [UserDatabase] = allUsers.filter({$0.isPremium})
 for (_, item) in allUserIsPremium2.enumerated() {
     print("ID: \(item.id), Nama: \(item.name), Has Premium Account: \(item.isPremium)")
 }
+
+print("------------------------------")
+
+// ######### ---------- Creating data Sort ---------- ##########
+
+// contoh #1
+var orderedUser: [UserDatabase] = allUsers.sorted { user1, user2 in
+    return user1.id < user2.id
+}
+
+// menggunakan "_", karena ada parameter yang ga digunakan
+for (_, item) in orderedUser.enumerated() {
+    print("\(item.id)")
+}
+
+print("------------------------------")
+
+// contoh #2
+var sortOrdered: [UserDatabase] = allUserIsPremium.sorted { user3, user4 in
+    return user3.id < user4.id
+}
+
+// pengulangan untuk mengakses value di dalam "sortOrdered" var
+for (_, item) in sortOrdered.enumerated() {
+    print(item.id)
+}
+
+print("------------------------------")
+
+// contoh #3 sama halnya seperti tuple, urutan index pertama adalah index 0, selanjutnya index 1, dst.
+// cara cepat
+var sortOrdered2: [UserDatabase] = allUsers.sorted(by: {$0.id > $1.id})
+
+for (_, item) in sortOrdered2.enumerated() {
+    print("ID: \(item.id)")
+}
+
+print("------------------------------")
+
+// ######### ---------- Map ---------- ##########
+// The map(_:) method has the ability to transform a sequence of elements.
+// We can use the map(_:) method to transform the elements of the array
+
+
+// #1
+var userNames: [String] = allUsers.map { user in
+    return user.name
+    
+}
+print(userNames)
+
+print("------------------------------")
+
+// #2
+var userNames2: [String] = allUsers.map({$0.name})
+print(userNames2)
